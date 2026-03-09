@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mini Donut Shop</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Header -->
+<header>
+    <h1>Mini Donut Shop</h1>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#specials">Specials</a>
+        <a href="#about">About</a>
+        <a href="#testimonials">Reviews</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<!-- Hero -->
+<section class="hero" id="home">
+    <div class="overlay">
+        <h2>Delicious Mini Donuts!</h2>
+        <p>Freshly baked every day 🍩</p>
+        <button id="orderBtn">Order Now</button>
+    </div>
+</section>
+
+<!-- Menu -->
+<section class="menu" id="menu">
+    <h2>Our Menu</h2>
+    <div class="menu-categories">
+        <button class="category-btn active" data-cat="all">All</button>
+        <button class="category-btn" data-cat="classic">Classic</button>
+        <button class="category-btn" data-cat="specialty">Specialty</button>
+        <button class="category-btn" data-cat="seasonal">Seasonal</button>
+    </div>
+    <div class="menu-items" id="menuItems"></div>
+</section>
+
+<!-- Specials -->
+<section class="specials" id="specials">
+    <h2>Special Offers</h2>
+    <div class="special-items">
+        <div class="special-card">
+            <h3>Strawberry Surprise</h3>
+            <p>50% off this week!</p>
+        </div>
+        <div class="special-card">
+            <h3>Chocolate Explosion</h3>
+            <p>Buy 2 get 1 free!</p>
+        </div>
+        <div class="special-card">
+            <h3>Blueberry Bliss</h3>
+            <p>Limited seasonal flavor!</p>
+        </div>
+    </div>
+</section>
+
+<!-- About -->
+<section class="about" id="about">
+    <img src="donut/donut1.jpg" alt="About Donuts">
+    <div class="about-text">
+        <h2>About Us</h2>
+        <p>At Mini Donut Shop, we bake happiness in every bite! Perfect for parties, gifts, or your daily sugar craving.</p>
+    </div>
+</section>
+
+<!-- Testimonials -->
+<section class="testimonials" id="testimonials">
+    <h2>Customer Reviews</h2>
+    <div class="testimonial-carousel" id="testimonialCarousel">
+        <div class="testimonial">"Best donuts ever! My kids love them!" - Sarah K.</div>
+        <div class="testimonial">"Super fresh and delicious every time." - James M.</div>
+        <div class="testimonial">"Highly recommend Strawberry Delight!" - Anna L.</div>
+    </div>
+</section>
+
+<!-- Contact -->
+<section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+<!-- Floating Cart -->
+<button id="floatingOrderBtn">🛒 <span id="cartCount">0</span></button>
+
+<!-- Payment Modal -->
+<div id="paymentModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Cart Summary</h2>
+        <div id="cartDetails"></div>
+        <h3>Total: $<span id="totalPrice">0.00</span></h3>
+        <button id="payBtn">Pay Now</button>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer>
+    &copy; 2026 Mini Donut Shop. Follow us on <a href="#">Instagram</a> | <a href="#">Facebook</a>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
