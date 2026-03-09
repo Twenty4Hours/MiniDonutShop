@@ -9,12 +9,12 @@ document.getElementById('floatingOrderBtn').addEventListener('click', () => {
 // Hero Slideshow
 const hero = document.querySelector('.hero');
 const heroImages = [
-    'donut/donut1.jpg',
-    'donut/donut2.jpg',
-    'donut/donut3.jpg',
-    'donut/donut4.jpg',
-    'donut/donut5.jpg',
-    'donut/donut6.jpg'
+    'donut1.jpg',
+    'donut2.jpg',
+    'donut3.jpg',
+    'donut4.jpg',
+    'donut5.jpg',
+    'donut6.jpg'
 ];
 let currentIndex = 0;
 function changeHeroBg() {
@@ -26,12 +26,12 @@ hero.style.backgroundImage = `url('${heroImages[0]}')`;
 
 // Donuts Data
 const donuts = [
-    { name: "Strawberry Delight", desc: "Sweet strawberry glaze with sprinkles.", img: "donut/donut1.jpg", cat: "classic", price: 2.50 },
-    { name: "Chocolate Heaven", desc: "Rich chocolate frosting topped with cocoa nibs.", img: "donut/donut2.jpg", cat: "classic", price: 3.00 },
-    { name: "Classic Glaze", desc: "Soft and fluffy donuts with a sugary glaze.", img: "donut/donut3.jpg", cat: "classic", price: 2.00 },
-    { name: "Maple Bacon", desc: "Sweet maple glaze with crispy bacon bits.", img: "donut/donut4.jpg", cat: "specialty", price: 3.50 },
-    { name: "Blueberry Dream", desc: "Blueberry glaze topped with white chocolate drizzle.", img: "donut/donut5.jpg", cat: "specialty", price: 3.25 },
-    { name: "Lemon Zest", desc: "Refreshing lemon glaze with sugar sprinkle.", img: "donut/donut6.jpg", cat: "seasonal", price: 2.75 }
+    { name: "Strawberry Delight", desc: "Sweet strawberry glaze with sprinkles.", img: "donut1.jpg", cat: "classic", price: 2.50 },
+    { name: "Chocolate Heaven", desc: "Rich chocolate frosting topped with cocoa nibs.", img: "donut2.jpg", cat: "classic", price: 3.00 },
+    { name: "Classic Glaze", desc: "Soft and fluffy donuts with a sugary glaze.", img: "donut3.jpg", cat: "classic", price: 2.00 },
+    { name: "Maple Bacon", desc: "Sweet maple glaze with crispy bacon bits.", img: "donut4.jpg", cat: "specialty", price: 3.50 },
+    { name: "Blueberry Dream", desc: "Blueberry glaze topped with white chocolate drizzle.", img: "donut5.jpg", cat: "specialty", price: 3.25 },
+    { name: "Lemon Zest", desc: "Refreshing lemon glaze with sugar sprinkle.", img: "donut6.jpg", cat: "seasonal", price: 2.75 }
 ];
 
 const menuContainer = document.getElementById('menuItems');
@@ -188,4 +188,5 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
     e.preventDefault();
     alert("Thank you! Your message has been sent.");
     this.reset();
+
 });
